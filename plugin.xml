@@ -7,18 +7,6 @@
     <js-module src="www/preview.js" name="PreviewAnyFile">
         <clobbers target="window.PreviewAnyFile" />
     </js-module>
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="PreviewAnyFile">
-                <param name="ios-package" value="HWPPreviewAnyFile"/>
-            </feature>
-        </config-file>
-        <source-file src="src/ios/PreviewAnyFile.swift" />
-        <dependency id="cordova-plugin-add-swift-support" version="*" />
-        <preference name="UseSwiftLanguageVersion" default="5.1" />
-        <framework src="CoreServices.framework" />
-    </platform>
-
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="PreviewAnyFile">
